@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="personaldatenbank" transaction-type="RESOURCE_LOCAL">
+        <class>at.fhj.swd.Mitarbeiter</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://10.65.1.37:5433/db_bierbaumer16" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.user" value="bierbaumer16" />
+            <property name="javax.persistence.jdbc.password" value="personaldbws2017" />
+            <property name="eclipselink.logging.level" value="ALL" />
+        </properties>
+    </persistence-unit>
+</persistence>
